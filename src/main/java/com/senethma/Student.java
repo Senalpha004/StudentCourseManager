@@ -55,10 +55,11 @@ public class Student implements java.io.Serializable {
 
     @Override
     public String toString() {
+
         return "Student ID: " + String.format("%03d", studentID)
                 + "Student Name: " + fullName
                 + "\nEmail: " + getEmail()
-                + "\nStudent ID: " + getStudentID() ;
+                + "\nStudent ID: " + getStudentID();
     }
 
 }

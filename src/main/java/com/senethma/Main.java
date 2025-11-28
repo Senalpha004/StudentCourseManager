@@ -15,7 +15,8 @@ public class Main {
             System.out.println("1. Add a new Student");
             System.out.println("2. Add a new Course");
             System.out.println("3. View Student/Course Details");
-            System.out.println("4. Exit");
+            System.out.println("4. Enroll a Student to a Course");
+            System.out.println("5. Exit");
 
             System.out.print("Your choice? (Enter Only the Number) ");
             int choice = input.nextInt();
@@ -34,6 +35,10 @@ public class Main {
                     break;
 
                 case 4:
+
+                    break;
+
+                case 5:
                     System.out.println("Thank you for using this System!");
                     System.out.println("Exiting the Program...");
                     running = false;

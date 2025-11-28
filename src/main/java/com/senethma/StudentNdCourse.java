@@ -1,12 +1,21 @@
 package com.senethma;
 import java.util.*;
+import java.io.*;
 
 public class StudentNdCourse {
 
 
-    public  StudentNdCourse() {
+    //creating lists to store the added information
+    private List<Student> students = new ArrayList<>();
+    private List<Course> courses = new ArrayList<>();
 
-    }
+    private final File datafile = new File("Student Course Details.ser");
+    private final File studentfile = new File("Student Details.txt");
+    private final File coursesfile = new File("Course Details.txt");
+
+    //to map the course ID to the necessary student
+    private Map<Integer, List<Integer>> enrollments = new HashMap<>();
+
 
     //to save the enrollment information
     public void saveData(){

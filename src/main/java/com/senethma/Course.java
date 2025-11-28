@@ -33,8 +33,8 @@ public class Course {
 
     @Override
     public String toString() {
-        return "Course Name: " + courseName
-                + "\nCourse ID: " + courseID
-                + "\nTotal Credits: " + Credit ;
+        return "Course Name: " + getCourseName()
+                + "\nCourse ID: " + getCourseID()
+                + "\nTotal Credits: " + getCredit() ;
     }
 }

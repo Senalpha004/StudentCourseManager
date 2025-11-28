@@ -23,11 +23,11 @@ public class StudentNdCourse {
     public void newStudent(){
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter Student First Name");
+        System.out.println("Enter Student First Name: ");
         String firstName = input.next();
-        System.out.println("Enter Student Last Name");
+        System.out.println("Enter Student Last Name: ");
         String lastName = input.next();
-        System.out.println("Enter Student Email");
+        System.out.println("Enter Student Email: ");
         String email = input.next();
 
         Student student = new Student(firstName, lastName, email);
@@ -41,7 +41,22 @@ public class StudentNdCourse {
 
     //to add a new course
     public void newCourse(){
+        Scanner input = new Scanner(System.in);
 
+        System.out.println("Enter Course Name: ");
+        String courseName = input.next();
+        System.out.println("Enter Course's ID: ");
+        int courseID = input.nextInt();
+        System.out.println("Enter the total Credits of the Course: ");
+        int Credit = input.nextInt();
+
+        Course course = new Course(courseName, courseID, Credit);
+        course.setCourseName(courseName);
+        course.setCourseID(courseID);
+        course.setCredit(Credit);
+
+        saveData();
+        System.out.println("Course Details are Saved!");
     }
 
     //to view all the data separately or all at once
